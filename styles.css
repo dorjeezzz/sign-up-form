@@ -68,7 +68,7 @@ input{
 }
 
 .mid{
-    padding: 5px 0px 0px 35px;
+    padding: 2px 0px 0px 35px;
     width: auto;
     height: calc(0.32*100vh);
     /* border: 1px solid black; */
@@ -82,11 +82,12 @@ input{
 }
 
 .bot{
-    /* display: flex; */
+    display: flex;
     background-color: rgb(242, 242, 242);
+    /* background-color: red; */
     height: calc(0.34*100vh);
     padding-left: 35px;
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 
 label{
@@ -100,6 +101,17 @@ button{
     padding: 8px 22px;
     border: 2px solid #596d48;
     color: white;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+#alr{
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    color: #596d48;
     font-weight: bold;
 }
 
