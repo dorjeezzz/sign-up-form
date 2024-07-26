@@ -21,6 +21,7 @@ body{
 
 label{
     font-size: 0.6rem;
+    display: block;
 }
 
 .container{
@@ -28,6 +29,7 @@ label{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    /* background-color: red; */
 }
 
 .image img{
@@ -44,7 +46,16 @@ label{
     flex-direction: row;
     margin-bottom: 1rem;
     /* background-color: aqua; */
+    width: 75%;
     /* justify-content: space-between; */
+}
+
+input{
+    display: block;
+    width: 175px;
+    height: 19px;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
 }
 
 .top{
@@ -53,6 +64,7 @@ label{
     font-family: Helvetica;
     background-color: rgb(242, 242, 242);
     height: calc(100vh / 3);
+    width: 100%;
 }
 
 .mid{
@@ -62,9 +74,11 @@ label{
     /* border: 1px solid black; */
     font-family: Helvetica;
     background-color: white;
-    box-shadow: 1px 3px 4px -2px black;
+    box-shadow: 1px 3px 4px -2px lightgray;
     z-index: 10;
     box-sizing: border-box;
+    position: relative;
+    z-index: 99999;
 }
 
 .bot{
@@ -80,17 +94,20 @@ label{
 
 button{
     border-radius: 7px;
-}
-
-input, label{
-    display: block;
+    background-color: #596d48;
+    padding: 8px 22px;
+    border: 2px solid #596d48;
+    color: white;
+    font-weight: bold;
 }
 
 input:focus{
+    outline: none !important;
     border: 1px solid blue;
+    border-radius: 3px;
+    box-shadow: 1px 3px 2px -3px black;
 }
 
-/* 
-input:invalid{
+/* input:invalid{
     border: 1px solid red;
 } */
