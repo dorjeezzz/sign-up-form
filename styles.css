@@ -32,9 +32,42 @@ label{
     /* background-color: red; */
 }
 
-.image img{
+.card-container{
+    position: relative;
     height: 100vh;
     width: 35vw;
+    background-image: url(./image.jpg);
+    background-size: cover;
+    font-family: my-cool-font;
+}
+
+.card-body{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .28);
+    color: white;
+    font-size: 8rem;
+    display: flex;
+    width: 100%;
+    height: 22vh;
+    align-items: center;
+    justify-content: center;
+    bottom: 2.9em;
+    padding: 0;
+    margin: 0;
+}
+
+.credits{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0.0001em;
+    font-size: 5px;
+}
+
+img{
+    height: 20vh;
+    width: 7vw;
 }
 
 .cont{
