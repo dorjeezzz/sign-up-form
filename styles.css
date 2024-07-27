@@ -122,6 +122,17 @@ input:focus{
     box-shadow: 1px 3px 2px -3px black;
 }
 
+input:invalid:focus{
+    border-color: red;
+}
+
 .container > div + div + div > label>*:invalid{
     border-color: red;
+}
+
+#match{
+    position: absolute;
+    bottom: 0.00001px;
+    font-size: 10px;
+    color: red;
 }
